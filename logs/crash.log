@@ -1,0 +1,487 @@
+/system/mail-verification-code//:: Friday,24th-May-2024 at 08:30:13 - CallingFunction:{transportMail(options:any)}, message {Missing credentials for "LOGIN"}
+/users/signup/initiate//:: Friday,24th-May-2024 at 08:51:51 - CallingFunction:{initiateSignUpSequence}, message {E11000 duplicate key error collection: at_File_Server.codes index: receipient_email_1 dup key: { receipient_email: "no-reply.atfs@hotmail.com" }}
+/users/signup/initiate//:: Friday,24th-May-2024 at 08:53:02 - CallingFunction:{initiateSignUpSequence}, message {E11000 duplicate key error collection: at_File_Server.codes index: receipient_email_1 dup key: { receipient_email: "no-reply.atfs@hotmail.com" }}
+/users/signup/initiate//:: Friday,24th-May-2024 at 08:55:24 - CallingFunction:{initiateSignUpSequence}, message {E11000 duplicate key error collection: at_File_Server.codes index: receipient_email_1 dup key: { receipient_email: "no-reply.atfs@hotmail.com" }}
+/users/signup/initiate//:: Friday,24th-May-2024 at 08:55:32 - CallingFunction:{initiateSignUpSequence}, message {E11000 duplicate key error collection: at_File_Server.codes index: receipient_email_1 dup key: { receipient_email: "no-reply.atfs@hotmail.com" }}
+/users/signup/set-password//:: Friday,24th-May-2024 at 16:01:11 - CallingFunction:{setNewPassword}, message {data must be a string or Buffer and salt must either be a salt string or a number of rounds}
+/users/signup/set-password//:: Friday,24th-May-2024 at 16:03:08 - CallingFunction:{setNewPassword}, message {data must be a string or Buffer and salt must either be a salt string or a number of rounds}
+/users/signup/set-password//:: Friday,24th-May-2024 at 16:10:04 - CallingFunction:{setNewPassword}, message {data and salt arguments required}
+/users/signup/set-password//:: Friday,24th-May-2024 at 16:11:27 - CallingFunction:{setNewPassword}, message {data and salt arguments required}
+/users/signup/set-password//:: Friday,24th-May-2024 at 16:13:13 - CallingFunction:{setNewPassword}, message {data and salt arguments required}
+/users/signup/set-password//:: Friday,24th-May-2024 at 16:15:17 - CallingFunction:{setNewPassword}, message {data must be a string or Buffer and salt must either be a salt string or a number of rounds}
+/users/signup/set-password//:: Friday,24th-May-2024 at 16:15:56 - CallingFunction:{setNewPassword}, message {data must be a string or Buffer and salt must either be a salt string or a number of rounds}
+/users/signup/set-password//:: Friday,24th-May-2024 at 16:17:04 - CallingFunction:{setNewPassword}, message {data must be a string or Buffer and salt must either be a salt string or a number of rounds}
+/system/mail-verification-code//:: Saturday,25th-May-2024 at 15:23:57 - CallingFunction:{transportMail(options:any)}, message {getaddrinfo ENOTFOUND smtp-mail.outlook.com}
+/users/signup/initiate//:: Saturday,25th-May-2024 at 15:23:57 - CallingFunction:{initiateSignUpSequence}, message {Cannot read properties of null (reading 'receipient_email')}
+/system/mail-verification-code//:: Saturday,25th-May-2024 at 15:42:09 - CallingFunction:{transportMail(options:any)}, message {getaddrinfo ENOTFOUND smtp-mail.outlook.com}
+/users/signup/initiate//:: Saturday,25th-May-2024 at 15:42:09 - CallingFunction:{initiateSignUpSequence}, message {Cannot read properties of null (reading 'receipient_email')}
+/system/mail-verification-code//:: Saturday,25th-May-2024 at 15:54:25 - CallingFunction:{transportMail(options:any)}, message {getaddrinfo ENOTFOUND smtp-mail.outlook.com}
+/users/signup/initiate//:: Saturday,25th-May-2024 at 15:54:25 - CallingFunction:{initiateSignUpSequence}, message {Cannot read properties of null (reading 'receipient_email')}
+/admins/signup/set-password//:: Monday,27th-May-2024 at 11:54:32 - CallingFunction:{setNewAdminPassword}, message {E11000 duplicate key error collection: at_File_Server.admins index: email_1 dup key: { email: "no-reply.atfs@hotmail.com" }}
+/admins/signup/set-password//:: Tuesday,4th-June-2024 at 02:06:42 - CallingFunction:{setNewAdminPassword}, Error Code: {11000}, message {E11000 duplicate key error collection: at_File_Server.admins index: email_1 dup key: { email: "no-reply.atfs@hotmail.com" }}
+ Stack Trace:
+ MongoServerError: E11000 duplicate key error collection: at_File_Server.admins index: email_1 dup key: { email: "no-reply.atfs@hotmail.com" }
+    at InsertOneOperation.execute (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\operations\execute_operation.js:136:16)
+    at async Collection.insertOne (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\collection.js:155:16)
+/system/verify-user/admins/undefined//:: Tuesday,4th-June-2024 at 02:22:39 - CallingFunction:{router.get(req, res)}, Error Code: {Unknown}, message {Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Admins"}
+ Stack Trace:
+ CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Admins"
+    at SchemaObjectId.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\cast.js:375:32)
+    at Query.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4798:12)
+    at Query._castConditions (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2206:10)
+    at model.Query._findOne (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2526:8)
+    at model.Query.exec (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4342:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:17:29
+/system/verify-user/admins/undefined//:: Tuesday,4th-June-2024 at 02:22:45 - CallingFunction:{router.get(req, res)}, Error Code: {Unknown}, message {Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Admins"}
+ Stack Trace:
+ CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Admins"
+    at SchemaObjectId.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\cast.js:375:32)
+    at Query.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4798:12)
+    at Query._castConditions (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2206:10)
+    at model.Query._findOne (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2526:8)
+    at model.Query.exec (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4342:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:17:29
+/system/verify-user/admins/undefined//:: Tuesday,4th-June-2024 at 02:23:03 - CallingFunction:{router.get(req, res)}, Error Code: {Unknown}, message {Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Admins"}
+ Stack Trace:
+ CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Admins"
+    at SchemaObjectId.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\cast.js:375:32)
+    at Query.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4798:12)
+    at Query._castConditions (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2206:10)
+    at model.Query._findOne (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2526:8)
+    at model.Query.exec (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4342:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:17:29
+/system/verify-user/admins/undefined//:: Tuesday,4th-June-2024 at 02:23:05 - CallingFunction:{router.get(req, res)}, Error Code: {Unknown}, message {Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Admins"}
+ Stack Trace:
+ CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Admins"
+    at SchemaObjectId.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\cast.js:375:32)
+    at Query.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4798:12)
+    at Query._castConditions (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2206:10)
+    at model.Query._findOne (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2526:8)
+    at model.Query.exec (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4342:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:17:29
+/system/verify-user/admins/undefined//:: Tuesday,4th-June-2024 at 02:24:20 - CallingFunction:{router.get(req, res)}, Error Code: {Unknown}, message {Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Admins"}
+ Stack Trace:
+ CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Admins"
+    at SchemaObjectId.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\cast.js:375:32)
+    at Query.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4798:12)
+    at Query._castConditions (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2206:10)
+    at model.Query._findOne (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2526:8)
+    at model.Query.exec (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4342:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:17:29
+/system/verify-user/admins/[object Object]//:: Friday,7th-June-2024 at 22:16:41 - CallingFunction:{router.get(req, res)}, Error Code: {Unknown}, message {Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Admins"}
+ Stack Trace:
+ CastError: Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Admins"
+    at SchemaObjectId.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\cast.js:375:32)
+    at Query.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4798:12)
+    at Query._castConditions (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2206:10)
+    at model.Query._findOne (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2526:8)
+    at model.Query.exec (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4342:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:17:29
+/system/verify-user/admins/[object Object]//:: Friday,7th-June-2024 at 22:16:51 - CallingFunction:{router.get(req, res)}, Error Code: {Unknown}, message {Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Admins"}
+ Stack Trace:
+ CastError: Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Admins"
+    at SchemaObjectId.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\cast.js:375:32)
+    at Query.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4798:12)
+    at Query._castConditions (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2206:10)
+    at model.Query._findOne (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2526:8)
+    at model.Query.exec (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4342:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:17:29
+/system/verify-user/admins/[object Object]//:: Friday,7th-June-2024 at 22:18:18 - CallingFunction:{router.get(req, res)}, Error Code: {Unknown}, message {Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Admins"}
+ Stack Trace:
+ CastError: Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Admins"
+    at SchemaObjectId.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\cast.js:375:32)
+    at Query.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4798:12)
+    at Query._castConditions (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2206:10)
+    at model.Query._findOne (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2526:8)
+    at model.Query.exec (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4342:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:17:29
+/system/verify-user/admins/[object Object]//:: Friday,7th-June-2024 at 22:33:48 - CallingFunction:{router.get(req, res)}, Error Code: {Unknown}, message {Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Admins"}
+ Stack Trace:
+ CastError: Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Admins"
+    at SchemaObjectId.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\cast.js:375:32)
+    at Query.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4798:12)
+    at Query._castConditions (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2206:10)
+    at model.Query._findOne (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2526:8)
+    at model.Query.exec (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4342:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:17:29
+/system/verify-user/admins/[object Object]//:: Friday,7th-June-2024 at 22:34:14 - CallingFunction:{router.get(req, res)}, Error Code: {Unknown}, message {Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Admins"}
+ Stack Trace:
+ CastError: Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Admins"
+    at SchemaObjectId.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\cast.js:375:32)
+    at Query.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4798:12)
+    at Query._castConditions (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2206:10)
+    at model.Query._findOne (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2526:8)
+    at model.Query.exec (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4342:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:17:29
+/system/verify-user/admins/[object Object]//:: Friday,7th-June-2024 at 22:45:23 - CallingFunction:{router.get(req, res)}, Error Code: {Unknown}, message {Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Admins"}
+ Stack Trace:
+ CastError: Cast to ObjectId failed for value "[object Object]" (type string) at path "_id" for model "Admins"
+    at SchemaObjectId.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\cast.js:375:32)
+    at Query.cast (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4798:12)
+    at Query._castConditions (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2206:10)
+    at model.Query._findOne (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:2526:8)
+    at model.Query.exec (C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongoose\lib\query.js:4342:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\niico\Documents\My Documents\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:17:29
+/session/password-reset///:: Sunday,9th-June-2024 at 22:54:23 - CallingFunction:{callback}, Error Code: {Unknown}, message {hashPassword is not defined}
+ Stack Trace:
+ ReferenceError: hashPassword is not defined
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:138:32
+    at Layer.handle [as handle_request] (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\index.js:47:12)
+/session/password-reset///:: Monday,10th-June-2024 at 23:04:43 - CallingFunction:{callback}, Error Code: {Unknown}, message {userObject is not defined}
+ Stack Trace:
+ ReferenceError: userObject is not defined
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\routes\auth.routes.js:150:89
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admin/store/uploads/public/image/66678579ef14b7cffe7a56d5//:: Tuesday,11th-June-2024 at 13:17:24 - CallingFunction:{uploadStoreFile}, Error Code: {Unknown}, message {id is not defined}
+ Stack Trace:
+ ReferenceError: id is not defined
+    at module.exports.uploadStoreFile (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admin.controller.js:75:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/system/verify-user/admins/66678579ef14b7cffe7a56d5//:: Tuesday,11th-June-2024 at 13:40:35 - CallingFunction:{router.get(/error/:code/:url/:error}, Error Code: {Unknown}, message {undefined}
+ Stack Trace:
+ undefined
+/users/signup/set-password//:: Tuesday,11th-June-2024 at 18:09:35 - CallingFunction:{setNewPassword}, Error Code: {11000}, message {E11000 duplicate key error collection: at_File_Server.customers index: email_1 dup key: { email: "no-reply.atfs@hotmail.com" }}
+ Stack Trace:
+ MongoServerError: E11000 duplicate key error collection: at_File_Server.customers index: email_1 dup key: { email: "no-reply.atfs@hotmail.com" }
+    at InsertOneOperation.execute (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\operations\execute_operation.js:136:16)
+    at async Collection.insertOne (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\collection.js:155:16)
+/admins/signup/set-password//:: Tuesday,11th-June-2024 at 21:04:00 - CallingFunction:{setNewAdminPassword}, Error Code: {Unknown}, message {Admin is not defined}
+ Stack Trace:
+ ReferenceError: Admin is not defined
+    at module.exports.recovery_SetNewPassword (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\recovery.controller.js:60:27)
+/admins/signup/set-password//:: Tuesday,11th-June-2024 at 21:05:21 - CallingFunction:{setNewAdminPassword}, Error Code: {Unknown}, message {Admin is not defined}
+ Stack Trace:
+ ReferenceError: Admin is not defined
+    at module.exports.recovery_SetNewPassword (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\recovery.controller.js:60:27)
+/system/mail-verification-code//:: Tuesday,11th-June-2024 at 21:11:16 - CallingFunction:{transportMail(options:any)}, Error Code: {EMESSAGE}, message {Message failed: 554 5.2.0 STOREDRV.Submission.Exception:OutboundSpamException; Failed to process message due to a permanent exception with message [BeginDiagnosticData]WASCL UserAction verdict is not None. Actual verdict is RefuseQuota, ShowTierUpgrade. OutboundSpamException: WASCL UserAction verdict is not None. Actual verdict is RefuseQuota, ShowTierUpgrade.[EndDiagnosticData] [Hostname=AS8P190MB1621.EURP190.PROD.OUTLOOK.COM]}
+ Stack Trace:
+ Error: Message failed: 554 5.2.0 STOREDRV.Submission.Exception:OutboundSpamException; Failed to process message due to a permanent exception with message [BeginDiagnosticData]WASCL UserAction verdict is not None. Actual verdict is RefuseQuota, ShowTierUpgrade. OutboundSpamException: WASCL UserAction verdict is not None. Actual verdict is RefuseQuota, ShowTierUpgrade.[EndDiagnosticData] [Hostname=AS8P190MB1621.EURP190.PROD.OUTLOOK.COM]
+    at SMTPConnection._formatError (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:798:19)
+    at SMTPConnection._actionSMTPStream (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:1719:34)
+    at SMTPConnection.<anonymous> (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:1187:22)
+    at SMTPConnection._processResponse (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:982:20)
+    at SMTPConnection._onData (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:763:14)
+    at SMTPConnection._onSocketData (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+/admins/signup/initiate//:: Tuesday,11th-June-2024 at 21:11:16 - CallingFunction:{verifyEmail}, Error Code: {Unknown}, message {Cannot read properties of null (reading 'receipient_email')}
+ Stack Trace:
+ TypeError: Cannot read properties of null (reading 'receipient_email')
+    at module.exports.recovery_VerifyEmail (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\recovery.controller.js:31:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admins/signup/set-password//:: Tuesday,11th-June-2024 at 21:13:49 - CallingFunction:{setNewAdminPassword}, Error Code: {Unknown}, message {mode is not defined}
+ Stack Trace:
+ ReferenceError: mode is not defined
+    at module.exports.recovery_SetNewPassword (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\recovery.controller.js:59:56)
+/users/share-file//:: Saturday,15th-June-2024 at 11:54:59 - CallingFunction:{sendFilesViaEmail}, Error Code: {ESOCKET}, message {701A0000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+}
+ Stack Trace:
+ Error: 701A0000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+/users/share-file//:: Saturday,15th-June-2024 at 11:55:59 - CallingFunction:{sendFilesViaEmail}, Error Code: {ESOCKET}, message {98400000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+}
+ Stack Trace:
+ Error: 98400000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+/users/share-file//:: Saturday,15th-June-2024 at 12:00:17 - CallingFunction:{sendFilesViaEmail}, Error Code: {Unknown}, message {response is not defined}
+ Stack Trace:
+ ReferenceError: response is not defined
+    at module.exports.sendFilesViaEmail (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\utils\mailer.utils.js:174:22)
+    at module.exports.shareFileController (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\users.controller.js:75:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/users/share-file//:: Saturday,15th-June-2024 at 12:01:36 - CallingFunction:{sendFilesViaEmail}, Error Code: {Unknown}, message {response is not defined}
+ Stack Trace:
+ ReferenceError: response is not defined
+    at module.exports.sendFilesViaEmail (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\utils\mailer.utils.js:174:22)
+    at module.exports.shareFileController (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\users.controller.js:75:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/users/share-file//:: Saturday,15th-June-2024 at 12:05:35 - CallingFunction:{sendFilesViaEmail}, Error Code: {Unknown}, message {response is not defined}
+ Stack Trace:
+ ReferenceError: response is not defined
+    at module.exports.sendFilesViaEmail (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\utils\mailer.utils.js:174:22)
+    at module.exports.shareFileController (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\users.controller.js:75:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/users/share-file//:: Saturday,15th-June-2024 at 20:10:13 - CallingFunction:{sendFilesViaEmail}, Error Code: {ESOCKET}, message {connect ETIMEDOUT 52.98.206.182:587}
+ Stack Trace:
+ Error: connect ETIMEDOUT 52.98.206.182:587
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16)
+/users/share-file//:: Saturday,15th-June-2024 at 21:23:20 - CallingFunction:{sendFilesViaEmail}, Error Code: {EENVELOPE}, message {Can't send mail - all recipients were rejected: 501 5.1.5 Recipient address reserved by RFC 2606}
+ Stack Trace:
+ Error: Can't send mail - all recipients were rejected: 501 5.1.5 Recipient address reserved by RFC 2606
+    at SMTPConnection._formatError (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:798:19)
+    at SMTPConnection._actionRCPT (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:1667:28)
+    at SMTPConnection.<anonymous> (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:1620:30)
+    at SMTPConnection._processResponse (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:982:20)
+    at SMTPConnection._onData (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:763:14)
+    at SMTPConnection._onSocketData (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+/users/share-file//:: Saturday,15th-June-2024 at 21:25:48 - CallingFunction:{sendFilesViaEmail}, Error Code: {EENVELOPE}, message {Can't send mail - all recipients were rejected: 501 5.1.5 Recipient address reserved by RFC 2606}
+ Stack Trace:
+ Error: Can't send mail - all recipients were rejected: 501 5.1.5 Recipient address reserved by RFC 2606
+    at SMTPConnection._formatError (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:798:19)
+    at SMTPConnection._actionRCPT (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:1667:28)
+    at SMTPConnection.<anonymous> (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:1620:30)
+    at SMTPConnection._processResponse (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:982:20)
+    at SMTPConnection._onData (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:763:14)
+    at SMTPConnection._onSocketData (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+/users/share-file//:: Saturday,15th-June-2024 at 21:30:38 - CallingFunction:{sendFilesViaEmail}, Error Code: {EENVELOPE}, message {Can't send mail - all recipients were rejected: 501 5.1.5 Recipient address reserved by RFC 2606}
+ Stack Trace:
+ Error: Can't send mail - all recipients were rejected: 501 5.1.5 Recipient address reserved by RFC 2606
+    at SMTPConnection._formatError (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:798:19)
+    at SMTPConnection._actionRCPT (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:1667:28)
+    at SMTPConnection.<anonymous> (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:1620:30)
+    at SMTPConnection._processResponse (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:982:20)
+    at SMTPConnection._onData (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:763:14)
+    at SMTPConnection._onSocketData (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+/users/share-file//:: Saturday,15th-June-2024 at 21:34:01 - CallingFunction:{sendFilesViaEmail}, Error Code: {EENVELOPE}, message {Can't send mail - all recipients were rejected: 501 5.1.5 Recipient address reserved by RFC 2606}
+ Stack Trace:
+ Error: Can't send mail - all recipients were rejected: 501 5.1.5 Recipient address reserved by RFC 2606
+    at SMTPConnection._formatError (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:798:19)
+    at SMTPConnection._actionRCPT (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:1667:28)
+    at SMTPConnection.<anonymous> (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:1620:30)
+    at SMTPConnection._processResponse (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:982:20)
+    at SMTPConnection._onData (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:763:14)
+    at SMTPConnection._onSocketData (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\nodemailer\lib\smtp-connection\index.js:195:44)
+    at TLSSocket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+/admins/signup/initiate//:: Sunday,16th-June-2024 at 16:43:42 - CallingFunction:{verifyEmail}, Error Code: {Unknown}, message {randomstring is not defined}
+ Stack Trace:
+ ReferenceError: randomstring is not defined
+    at generateVerificationCode (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:59:5)
+    at module.exports.verifyEmail (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:81:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admins/signup/initiate//:: Sunday,16th-June-2024 at 16:45:19 - CallingFunction:{verifyEmail}, Error Code: {Unknown}, message {randomstring is not defined}
+ Stack Trace:
+ ReferenceError: randomstring is not defined
+    at generateVerificationCode (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:59:5)
+    at module.exports.verifyEmail (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:81:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admins/signup/initiate//:: Sunday,16th-June-2024 at 16:46:59 - CallingFunction:{verifyEmail}, Error Code: {Unknown}, message {randomstring is not defined}
+ Stack Trace:
+ ReferenceError: randomstring is not defined
+    at generateVerificationCode (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:59:5)
+    at module.exports.verifyEmail (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:83:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admins/signup/initiate//:: Sunday,16th-June-2024 at 16:48:14 - CallingFunction:{verifyEmail[async mailer]}, Error Code: {Unknown}, message {TypeError: Cannot read properties of undefined (reading 'operationStatus')}
+ Stack Trace:
+ Error: TypeError: Cannot read properties of undefined (reading 'operationStatus')
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:102:26
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admins/signup/initiate//:: Sunday,16th-June-2024 at 16:50:12 - CallingFunction:{verifyEmail[async mailer]}, Error Code: {Unknown}, message {TypeError: Cannot read properties of undefined (reading 'operationStatus')}
+ Stack Trace:
+ Error: TypeError: Cannot read properties of undefined (reading 'operationStatus')
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:102:26
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admins/signup/initiate//:: Sunday,16th-June-2024 at 16:56:27 - CallingFunction:{verifyEmail[async mailer]}, Error Code: {Unknown}, message {TypeError: Cannot read properties of undefined (reading 'operationStatus')}
+ Stack Trace:
+ Error: TypeError: Cannot read properties of undefined (reading 'operationStatus')
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:106:30
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admins/signup/initiate//:: Sunday,16th-June-2024 at 16:59:19 - CallingFunction:{verifyEmail[async mailer]}, Error Code: {Unknown}, message {TypeError: Cannot read properties of undefined (reading 'operationStatus')}
+ Stack Trace:
+ Error: TypeError: Cannot read properties of undefined (reading 'operationStatus')
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:106:30
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admins/signup/initiate//:: Sunday,16th-June-2024 at 17:03:55 - CallingFunction:{verifyEmail[async mailer]}, Error Code: {Unknown}, message {TypeError: Cannot read properties of undefined (reading 'operationStatus')}
+ Stack Trace:
+ Error: TypeError: Cannot read properties of undefined (reading 'operationStatus')
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:106:30
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admins/signup/initiate//:: Sunday,16th-June-2024 at 17:08:05 - CallingFunction:{verifyEmail}, Error Code: {Unknown}, message {responseFromMailer is not defined}
+ Stack Trace:
+ ReferenceError: responseFromMailer is not defined
+    at module.exports.verifyEmail (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:86:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admins/signup/initiate//:: Sunday,16th-June-2024 at 17:08:43 - CallingFunction:{verifyEmail}, Error Code: {Unknown}, message {responseFromMailer is not defined}
+ Stack Trace:
+ ReferenceError: responseFromMailer is not defined
+    at module.exports.verifyEmail (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:86:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admins/signup/initiate//:: Sunday,16th-June-2024 at 17:09:17 - CallingFunction:{verifyEmail}, Error Code: {Unknown}, message {responseFromMailer is not defined}
+ Stack Trace:
+ ReferenceError: responseFromMailer is not defined
+    at module.exports.verifyEmail (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:86:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/admins/signup/initiate//:: Sunday,16th-June-2024 at 17:09:47 - CallingFunction:{verifyEmail}, Error Code: {Unknown}, message {responseFromMailer is not defined}
+ Stack Trace:
+ ReferenceError: responseFromMailer is not defined
+    at module.exports.verifyEmail (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\admins.signin.controller.js:86:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+/users/signup/set-password//:: Monday,17th-June-2024 at 10:19:50 - CallingFunction:{setNewPassword}, Error Code: {11000}, message {E11000 duplicate key error collection: at_File_Server.customers index: email_1 dup key: { email: "niico.ncs@gmail.com" }}
+ Stack Trace:
+ MongoServerError: E11000 duplicate key error collection: at_File_Server.customers index: email_1 dup key: { email: "niico.ncs@gmail.com" }
+    at InsertOneOperation.execute (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\operations\execute_operation.js:136:16)
+    at async Collection.insertOne (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\collection.js:155:16)
+/user/views/profile/66700e71fe2ffef724a4f5ff//:: Monday,17th-June-2024 at 15:31:11 - CallingFunction:{router.get(/error/:code/:url/:error}, Error Code: {Unknown}, message {undefined}
+ Stack Trace:
+ undefined
+/users/profile/update-component/profile-picture/66700e71fe2ffef724a4f5ff/4636bd443046a5e1a742163ea4cc70e6//:: Monday,17th-June-2024 at 15:51:02 - CallingFunction:{updateProfilePicture~ delete_current_profilePicture}, Error Code: {ERR_INVALID_ARG_TYPE}, message {The "path" argument must be of type string. Received undefined}
+ Stack Trace:
+ TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (node:internal/validators:162:11)
+    at Object.join (node:path:433:7)
+    at module.exports.updateProfilePicture (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\users.controller.js:200:48)
+    at Layer.handle [as handle_request] (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\route.js:149:13)
+    at done (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:49:68)
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:530:35)
+/users/profile/update-component/profile-picture/66700e71fe2ffef724a4f5ff/4636bd443046a5e1a742163ea4cc70e6//:: Monday,17th-June-2024 at 15:52:56 - CallingFunction:{updateProfilePicture~ delete_current_profilePicture}, Error Code: {ERR_INVALID_ARG_TYPE}, message {The "path" argument must be of type string. Received undefined}
+ Stack Trace:
+ TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (node:internal/validators:162:11)
+    at Object.join (node:path:433:7)
+    at module.exports.updateProfilePicture (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\users.controller.js:202:48)
+    at Layer.handle [as handle_request] (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\route.js:149:13)
+    at done (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:49:68)
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:530:35)
+/users/profile/update-component/profile-picture/66700e71fe2ffef724a4f5ff/4636bd443046a5e1a742163ea4cc70e6//:: Monday,17th-June-2024 at 15:54:47 - CallingFunction:{updateProfilePicture~ delete_current_profilePicture}, Error Code: {ERR_INVALID_ARG_TYPE}, message {The "path" argument must be of type string. Received undefined}
+ Stack Trace:
+ TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (node:internal/validators:162:11)
+    at Object.join (node:path:433:7)
+    at module.exports.updateProfilePicture (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\users.controller.js:202:48)
+    at Layer.handle [as handle_request] (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\route.js:149:13)
+    at done (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:49:68)
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:530:35)
+/users/profile/update-component/profile-picture/66700e71fe2ffef724a4f5ff/4636bd443046a5e1a742163ea4cc70e6//:: Monday,17th-June-2024 at 15:55:15 - CallingFunction:{updateProfilePicture~ delete_current_profilePicture}, Error Code: {ERR_INVALID_ARG_TYPE}, message {The "path" argument must be of type string. Received undefined}
+ Stack Trace:
+ TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (node:internal/validators:162:11)
+    at Object.join (node:path:433:7)
+    at module.exports.updateProfilePicture (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\users.controller.js:202:48)
+    at Layer.handle [as handle_request] (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\route.js:149:13)
+    at done (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:49:68)
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:530:35)
+/users/profile/update-component/profile-picture/66700e71fe2ffef724a4f5ff/4636bd443046a5e1a742163ea4cc70e6//:: Monday,17th-June-2024 at 15:57:04 - CallingFunction:{updateProfilePicture~ delete_current_profilePicture}, Error Code: {Unknown}, message {fs is not defined}
+ Stack Trace:
+ ReferenceError: fs is not defined
+    at module.exports.updateProfilePicture (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\controllers\users.controller.js:201:13)
+    at Layer.handle [as handle_request] (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\express\lib\router\route.js:149:13)
+    at done (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:49:68)
+    at C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:530:35)
+    at finish (node:internal/streams/writable:945:10)
+    at node:internal/streams/writable:926:13
+/users/share-file//:: Monday,17th-June-2024 at 16:07:19 - CallingFunction:{sendFilesViaEmail}, Error Code: {ESOCKET}, message {undefined}
+ Stack Trace:
+ undefined
+/user/views/profile/66758999ff1fdfa226195a23//:: Friday,21st-June-2024 at 14:17:09 - CallingFunction:{router.get(/error/:code/:url/:error}, Error Code: {Unknown}, message {undefined}
+ Stack Trace:
+ undefined
+createNewAdmin//:: Saturday,22nd-June-2024 at 17:55:21 - CallingFunction:{createNewAdmin}, Error Code: {11000}, message {E11000 duplicate key error collection: at_File_Server.admins index: email_1 dup key: { email: "niico.ncs@gmail.com" }}
+ Stack Trace:
+ MongoServerError: E11000 duplicate key error collection: at_File_Server.admins index: email_1 dup key: { email: "niico.ncs@gmail.com" }
+    at InsertOneOperation.execute (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\operations\execute_operation.js:136:16)
+    at async Collection.insertOne (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\collection.js:155:16)
+createNewCustomer//:: Saturday,22nd-June-2024 at 17:58:36 - CallingFunction:{createNewCustomer}, Error Code: {11000}, message {E11000 duplicate key error collection: at_File_Server.customers index: email_1 dup key: { email: "niico.ncs@gmail.com" }}
+ Stack Trace:
+ MongoServerError: E11000 duplicate key error collection: at_File_Server.customers index: email_1 dup key: { email: "niico.ncs@gmail.com" }
+    at InsertOneOperation.execute (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\operations\execute_operation.js:136:16)
+    at async Collection.insertOne (C:\Users\niico\Code\AmaliTech PreScreen Challenge\Solution\AT_File-Server\node_modules\mongodb\lib\collection.js:155:16)
+/system/verify-user/users/66750a8385a4f907ef0796e4//:: Wednesday,26th-June-2024 at 22:45:09 - CallingFunction:{router.get(/error/:code/:url/:error}, Error Code: {Unknown}, message {undefined}
+ Stack Trace:
+ undefined
+/system/verify-user/users/66750a8385a4f907ef0796e4//:: Wednesday,26th-June-2024 at 22:45:09 - CallingFunction:{router.get(/error/:code/:url/:error}, Error Code: {Unknown}, message {undefined}
+ Stack Trace:
+ undefined
+/system/verify-user/users/66750a8385a4f907ef0796e4//:: Wednesday,26th-June-2024 at 22:45:09 - CallingFunction:{router.get(/error/:code/:url/:error}, Error Code: {Unknown}, message {undefined}
+ Stack Trace:
+ undefined
+/system/verify-user/users/66750a8385a4f907ef0796e4//:: Wednesday,26th-June-2024 at 22:45:10 - CallingFunction:{router.get(/error/:code/:url/:error}, Error Code: {Unknown}, message {undefined}
+ Stack Trace:
+ undefined

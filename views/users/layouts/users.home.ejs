@@ -1,0 +1,64 @@
+<main class="store-container">
+    <% if (files.length === 0) { %>
+     <div class="files-grid">
+        Nothing to see here
+     </div>
+    <% } %>
+    <div class="files-grid">
+        <% for (let file of files) { %>
+            <div class="file-card">
+                <div class="thumbnail">
+                    <img 
+                        src=<%=
+                            file.type==="Image File" ? 
+                                `${file.filePathUrl}` : 
+                                    file.type==="PDF Document" ? 
+                                        "/files/system/images/pdf.png" :
+                                            "/files/system/images/word.png" 
+                        %>
+                    alt="File Thumbnail"
+                    class="file-thumbnail">
+                </div>
+                <div class="file-info">
+                    <h3><%= file.title %></h3>
+                    <p><%= file.description %></p>
+                </div>
+                <div class="file-actions">
+                    <button 
+                        class="favorite-btn" 
+                        onclick="addToFavorites(this)" 
+                        data-file_type="<%= file.type.slice(0, file.type.indexOf(" ")) %>" 
+                        data-file_id="<%= file._id %>"
+                    >Add to Favorites</button>
+                    <button 
+                        class="download-btn" 
+                        onclick="downloadFile(this)" 
+                        data-file_path="<%= file.filePathUrl %>"
+                        data-title="<%= file.title %>"
+                        data-originalname="<%= file.originalname %>"
+                        data-file_id="<%= file._id %>"
+                    >Download</button>
+                    <button 
+                        class="share-btn" 
+                        onclick="shareFile(this)" 
+                        data-file_type="<%= file.type.slice(0, file.type.indexOf(" ")) %>" 
+                        data-file_id="<%= file._id %>"
+                    >Share</button>
+                </div>
+            </div>
+        <% } %>
+    </div>
+    <div id="share-file_form_container">
+    </div>
+</main>
+
+<script defer>
+    function toggleExpand(id) {
+        const element = document.getElementById(id);
+        if (element.style.display === "none" || element.style.display === "") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>

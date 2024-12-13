@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/files/favicon/" type="image/x-icon">
+    <link rel="stylesheet" href="/files/css/root/root.css">
+    <% for( let stylesheet_url of stylesheets_urls) { %>
+    <link rel="stylesheet" href="<%= stylesheet_url %>">
+    <% } %>
+    <link rel="stylesheet" href="/files/css/root/search.css">
+
+    <title>(AT-FS): Store</title>
+</head>
+<body>
+    <%- include('templates/users.header.ejs') %>
+    
+    <main class="store-container">
+        <% if (pageUrl === "home") { %>
+            <%- include('layouts/users.home.ejs') %>
+        <% } else if (pageUrl === "profile") { %>
+            <%- include('layouts/users.profile.ejs') %>
+        <% } else if (pageUrl === "search") { %>
+            <%- include('../search.ejs') %>
+        <% } else if (pageUrl === "search-result") { %>
+            <%- include('layouts/users.home.ejs') %>
+        <% } %>
+    </main>
+
+    <%- include('templates/users.scripts.ejs') %>
+</body>
+</html>

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: chrisncs/at-file-server:1.0
+    ports:
+      - "3300:3300"
+    volumes:
+      - at-fs-data:/app/AT-FS
+
+volumes:
+  at-fs-data:

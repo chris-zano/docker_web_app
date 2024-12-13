@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "font-default";
+    src: url('/files/typeface/RedditMono-Regular.ttf');
+}
+
+:root {
+    --text: #181925;
+    --background: #f4f5fb;
+    --primary: #032dfc;
+    --secondary: #03980a;
+    --accent: #a51901;
+    --font-default: "font-default";
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-default);
+    color: unset;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.hidden {
+    display: none;
+}
+
+.toast {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 250px;
+    padding: 15px;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.toast.error {
+    background-color: #e74c3c;
+}
+
+.toast.warning {
+    background-color: #f39c12;
+}
+
+.toast.info {
+    background-color: #3498db;
+}
+
+.toast.success {
+    background-color: #2ecc71;
+}
+
+.toast .close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* header */
+
+.admin-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.admin-header-container .logo {
+    display: flex;
+    align-items: center;
+}
+
+.admin-header-container .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.admin-header-container .logo h2 {
+    margin: 0;
+}
+
+.admin-header-container .nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.admin-header-container .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.admin-header-container .nav ul li {
+    margin: 0 15px;
+}
+
+.admin-header-container .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.admin-header-container .nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.admin-header-container .profile {
+    cursor: pointer;
+    
+    margin-top: 10px;
+    padding: 0.3ch 0.8ch;
+    border-radius: 1ch;
+}
+.admin-header-container .profile a {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.admin-header-container .profile:hover, .admin-header-container .profile:focus {
+    background-color: transparent;
+}
+
+.admin-header-container .profile .profile-image img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.admin-header-container .profile .signin-username p {
+    margin: 0;
+    width: 10ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .admin-header-container {
+        display: grid;
+        grid-template-areas: 
+        "logo logo profile"
+        "nav nav nav"
+        ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .admin-header-container .logo {
+        grid-area: logo;
+        display: flex;
+    }
+    
+    .admin-header-container .logo img {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+    
+    .admin-header-container .logo h2 {
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    .admin-header-container .nav {
+        grid-area: nav;
+        width: 100%;
+        text-align: left;
+    }
+
+    .admin-header-container .nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .admin-header-container .nav ul li {
+        margin: 5px;
+    }
+
+    .admin-header-container .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: profile;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .admin-header-container .profile .signin-username p {
+        width: 10ch;
+    }
+}

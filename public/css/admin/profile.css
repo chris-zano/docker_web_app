@@ -1,0 +1,121 @@
+section.section-profile-main {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.profile-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+
+.profile-header {
+    background-color: var(--text);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-content {
+    padding: 20px;
+}
+
+.profile-pic {
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-pic button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.profile-pic button:hover {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-info .info {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.profile-info label {
+    font-weight: bold;
+}
+
+.profile-info p {
+    cursor: no-drop;
+    margin: 15px 0;
+    border-radius: 1ch;
+    padding: 1ch 3ch;
+}
+
+.profile-info button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    border-radius: 1ch;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.profile-info button:hover {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+#password-btn-ch {
+    border: 1px solid var(--accent);
+    background-color: var(--accent);
+    color: #fff;
+}
+
+#password-btn-ch:hover, #password-btn-ch:focus {
+    background-color: transparent;
+    color: var(--text);
+}
+
+#logout-btn {
+    border: 1px solid var(--accent);
+    background-color: transparent;
+    color: var(--text);
+}
+
+#logout-btn:hover, #logout-btn:focus {
+    background-color: var(--accent);
+    color: var(--white);
+}

@@ -1,0 +1,27 @@
+<section id="header-seach-bar">
+    <form action="#" id="search-form" class="search-bar">
+        <div>
+            <select class="dropdown" name="search-content" id="search-category">
+                <option class="dropdown-list-item dropdown-text" value="none">Categories</option>
+                <option class="dropdown-list-item" value="all">All</option>
+                <option class="dropdown-list-item" value="images">Images</option>
+                <option class="dropdown-list-item" value="pdf">PDF Document</option>
+                <option class="dropdown-list-item" value="doc">Word Documents</option>
+            </select>
+        </div>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search anything... [ / ]" required />
+            <button type="submit" id="searchBtn" style="box-shadow: none;">
+                <i class="fa-solid fa-magnifying-glass">
+                    <img src="/files/system/images/search.png" alt="magnifying glass">
+                </i>
+            </button>
+        </div>
+    </form>
+</section>
+
+<section class="results" id="results">
+    <ul id="results-ul"></ul>
+</section>
+<script src="/socket.io/socket.io.js" defer></script>
+<script src="/files/scripts/global/global.search.js" defer></script>

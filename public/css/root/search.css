@@ -1,0 +1,135 @@
+section#header-seach-bar {
+    margin: 1rem auto 0;
+    height: 70px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: center;
+    border-radius: 1ch;
+    border: 1px solid #63616166;
+}
+
+section#header-seach-bar form.search-bar {
+    background-color: #cbcbcb;
+    border-radius: 1ch;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 1ch;
+}
+
+select.dropdown {
+    border-radius: 1ch;
+    width: max-content;
+    height: 100%;
+    border: 1px solid #63616166;
+    outline: none;
+    padding: 0 0 0 0.5ch;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-box {
+    position: relative;
+    background-color: #fcf4fb;
+    border-radius: 1ch;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4ch;
+}
+
+.search-box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-indent: 10px;
+}
+
+.search-box input::placeholder {
+    color: black;
+}
+
+button#searchBtn {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: fit-content;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+button#searchBtn i img {
+    width: 25px;
+    height: 25px;
+    margin-right: 1ch;
+}
+
+section.results#results {
+    margin: 1rem auto 0;
+    padding: 1rem;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+section.results#results ul {
+    scroll-behavior: smooth;
+    margin: auto;
+    height: 100%;
+    width: 70%;
+    overflow-y: scroll;
+    display: block;
+}
+
+section.results#results ul li {
+    padding: 1ch;
+    margin: 1ch 0;
+    border-radius: 1ch;
+    box-shadow: 0px 3px 3px #505050ae;
+    width: 100%;
+    height: 200px;
+}
+
+section.results#results ul li a {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 4px;
+}
+
+section.results#results ul li a div.thumbnail-wrapper {
+    width: 180px;
+    height: 180px;
+    padding: 5px;
+    border-radius: 1ch;
+    contain: content;
+}
+
+section.results#results ul li a div.thumbnail-wrapper img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+section.results#results ul li a div.title {
+    height: 100%;
+    overflow: scroll;
+}
+
+section.results#results ul li a div.title p {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+}
+
+section.results#results ul li a div.title span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text);
+}

@@ -1,0 +1,111 @@
+<section class="admin_home_main">
+    <div class="container">
+        <% if (files.length==0) { %>
+            <p>There are no files in the database. Select upload to upload a file</p>
+            <% } %>
+
+                <div class="file-cards">
+                    <% for( let file of files) { %>
+                        <div class="file-card">
+                            <img src=<%=file.type==="Image File" ? `${file.filePathUrl}` : file.type==="PDF Document"
+                                ? "/files/system/images/pdf.png" : "/files/system/images/word.png" %>
+                            alt="File Thumbnail"
+                            class="file-thumbnail">
+                            <div class="file-info">
+                                <h2>
+                                    <%= file.title %>
+                                </h2>
+                                <p>Type: <%= file.type %>
+                                </p>
+                                <p>Number of Downloads: <%= file.downloads.length %>
+                                </p>
+                                <p>Number of Shares: <%= file.shared.length %>
+                                </p>
+
+                                <div class="file-actions">
+                                    <section>
+                                        <button class="edit-btn"
+                                            onclick="toggleExpand('edit-<%= file._id %>')">Edit</button>
+                                        <div id="edit-<%= file._id %>" class="expand-content">
+                                            <ul>
+                                                <li>
+                                                    <form
+                                                        action="/admin/edit-file-contents/<%= file._id %>/<%= file.admin_details._id %>"
+                                                        method="post">
+                                                        <div class="input-group">
+                                                            <label for="title">Change title of file</label>
+                                                            <input type="text" name="title" id="title"
+                                                                value="<%= file.title %>" required
+                                                                style="height: 30px; width: 100%;">
+                                                        </div>
+                                                        <div class="input-group">
+                                                            <label for="description">Change description of file</label>
+                                                            <input type="text" name="description" id="description"
+                                                                value="<%= file.description %>" required
+                                                                style="height: 100px; width: 100%;">
+                                                        </div>
+                                                        <div class="input-group">
+                                                            <label for="title">Change visibility of the file</label>
+                                                            <select name="visibility" id="visibility" required
+                                                                style="width: 100%; height: 30px;">
+                                                                <option value="public">Everyone</option>
+                                                                <option value="private">Only Me</option>
+                                                            </select>
+                                                        </div>
+                                                        <input type="submit" value="Update">
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <section>
+                                        <button class="delete-btn" onclick="deleteFile(this)"
+                                            data-file-id="<%= file.id %>" data-admin-id="<%= file.admin_details._id %>"
+                                            data-filename="<%= file.filename %>"
+                                            data-file_type="<%= file.type %>">Delete</button>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <% } %>
+                </div>
+    </div>
+</section>
+
+<script defer>
+    function toggleExpand(id) {
+        const element = document.getElementById(id);
+        if (element.style.display === "none" || element.style.display === "") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
+
+<script defer>
+    const getButtonAttribute = (button, attribute = String()) => {
+        return button.getAttribute(attribute);
+    }
+    async function deleteFile(button) {
+        // let deleteFileUrl = `/admin/delete-file/${button.getAttribute("data-file-id")}/${button.getAttribute("data-admin-id")}/${button.getAttribute("data-filename")}`;
+        const adminId = encodeURIComponent(getButtonAttribute(button, "data-admin-id")),
+            fileId = encodeURIComponent(getButtonAttribute(button, "data-file-id")),
+            filename = encodeURIComponent(getButtonAttribute(button, "data-filename")),
+            fileType = encodeURIComponent(getButtonAttribute(button, "data-file_type"));
+
+        let deleteFileUrl = `/admin/delete-file/${adminId}?fid=${fileId}&fname=${filename}&ftype=${fileType}`;
+
+        try {
+            const deleteResponse = await fetch(encodeURI(deleteFileUrl));
+            const responseData = await deleteResponse.json();
+            const status = deleteResponse.status;
+
+            if (status !== 200) {
+                return Toast_Notification.showError(responseData.message);
+            }
+
+            window.location.reload();
+        } catch (error) { console.log(error) }
+    }
+</script>

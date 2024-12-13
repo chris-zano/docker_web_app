@@ -1,0 +1,33 @@
+<div class="upload-container">
+    <h1>Upload File</h1>
+    <form id="uploadForm" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="fileCategory">File Category:</label>
+            <select id="fileCategory" name="fileCategory" required>
+                <option value="image">Image</option>
+                <option value="pdf">PDF</option>
+                <option value="doc">Document</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="fileUpload">Choose File:</label>
+            <input type="file" id="fileUpload" name="fileUpload" accept=".jpg,.jpeg,.png" required>
+        </div>
+        <div class="form-group">
+            <label for="visibility">Visibility: <small>&#9432; choose who can see it</small></label>
+            <select id="visibility" name="visibility" required>
+                <option value="public">Everyone</option>
+                <option value="private">Only Me</option>
+            </select>
+        </div>
+        <button type="submit">Upload</button>
+    </form>
+</div>

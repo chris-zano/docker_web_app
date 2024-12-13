@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/files/favicon/" type="image/x-icon">
+    <link rel="stylesheet" href="/files/css/root/root.css">
+    <link rel="stylesheet" href="/files/css/root/signin.css">
+    <title>AT-FS: (Signin)</title>
+</head>
+
+<body>
+
+    <main class="container-main" id="container-main">
+        <div class="form-container username-form-container" id="username-form-container">
+            <form action="/users/signin" id="signin-form-signin-with-username" class="login-form">
+                <div class="form-header">
+                    <h2>Sign in </h2>
+                </div>
+                <button type="button" class="sign-in-with-email-btn" id="sign-in-with-email-btn">Sign up with
+                    Email</button>
+                <div class="separator">
+                    <span>OR</span>
+                </div>
+                <div class="input-group">
+                    <label for="username">Username: </label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+
+                <div class="input-group">
+                    <a href="/recovery" onclick="setRecoveryMode()">Forgot password?</a>
+                    <script>
+                        const setRecoveryMode = () => window.sessionStorage.setItem("recovery-mode", JSON.stringify("admin"));
+                    </script>
+                </div>
+
+                <div class="input-group">
+                    <button type="submit" class="signin-btn">Sign in</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container username-form-container hidden" id="email-form-container">
+            <form action="/users/signin" id="signin-form-signup" class="login-form">
+                <div class="form-header">
+                    <h2>Sign up</h2>
+                </div>
+                <button type="button" class="sign-in-with-username-btn" id="sign-in-with-username-btn">Sign in with
+                    username</button>
+                <div class="separator">
+                    <span>OR</span>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="signin-btn" id="signup-btn">Continue</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+    <script>
+        const verificationCodeForm = `
+            <div class="form-container verification-code-form-container" id="code-form-container">
+                <form action="/users/verify-code" id="code-form-signup" class="login-form">
+                    <div class="form-header">
+                        <h2>Verify Email</h2>
+                    </div>
+                    <br>
+                    <div>
+                        <small>&#9432; An email with verification code has been sent to you.</small>
+                        <br>
+                        
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <label for="email">Enter verification code: </label>
+                        <input type="text" name="code" id="code" required>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="code-btn" id="code-btn" disabled>Verify</button>
+                    </div>
+                    <small style="font-size: 10px;">&#9432; If you cannot find it, kindly check your spam folder</small>
+                    <small style=font-size: 13px; text-decoration: underline; color: navy; id="resend-code" class="hidden">Resend Code</small>
+                </form>
+            </div>
+        `;
+    </script>
+    <script>
+        const addPasswordForm = `
+            <div class="form-container verification-code-form-container" id="password-form-container">
+                <form action="/users/verify-code" id="password-form-signup" class="login-form">
+                    <div class="form-header">
+                        <h2>Secure your account</h2>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="input-group">
+                        <label for="email">create a password: </label>
+                        <input type="password" name="user_password" id="password_input" required>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="password-btn" id="password-btn" disabled>Confirm</button>
+                    </div>
+                </form>
+            </div>
+        `;
+    </script>
+    <script src="/files/scripts/system/system.notification.js"></script>
+    <script src="/files/scripts/system/system.utils.js"></script>
+    <script>
+        const signInWithEmailBtn = getId("sign-in-with-email-btn");
+        const signInWithUsernameBtn = getId("sign-in-with-username-btn");
+
+        signInWithEmailBtn.addEventListener("click", (e) => {
+            const emailFormContainer = getId("email-form-container");
+            const usernameFormContainer = getId("username-form-container");
+
+            if (emailFormContainer.classList.contains("hidden")) {
+                usernameFormContainer.classList.add("hidden");
+                emailFormContainer.classList.remove("hidden");
+            }
+        });
+
+        signInWithUsernameBtn.addEventListener("click", (e) => {
+            const emailFormContainer = getId("email-form-container");
+            const usernameFormContainer = getId("username-form-container");
+
+            if (usernameFormContainer.classList.contains("hidden")) {
+                emailFormContainer.classList.add("hidden");
+                usernameFormContainer.classList.remove("hidden");
+            }
+        });
+    </script>
+    <script src="/files/scripts/system/system.admin-signin.js"></script>
+</body>
+
+</html>
